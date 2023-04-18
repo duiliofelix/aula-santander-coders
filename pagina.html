@@ -1,101 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <style>
-
-    body {
-        background-color: pink;
-    }
-
-    #corpo {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        width: 100vw;
-        height: 100vh;
-    }
-
-
-
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./inde"></script>
 </head>
+
 <body>
+    <h1>Calculadora Simples</h1>
 
-<div id="corpo">
+    <div id="corpo">
 
-<div id="display">
-    display
-</div>
-
-<div>
-    <button>limpar</button>
-</div>
-
-<div>
-    <button onclick="setarZero()">0</button>
-    <button onclick="setarUm()">1</button>
-    <button onclick="setarDois()">2</button>
-</div>
-
-<div>
-    <button>3</button>
-    <button>4</button>
-    <button>5</button>
-</div>
-
-<div>
-    <button>6</button>
-    <button>7</button>
-    <button>8</button>
-</div>
-
-<div>
-    <button>9</button>
-    <button>.</button>
-</div>
-
-<div>
-    <button onclick="adicionarUm()">+</button>
-    <button>-</button>
-    <button>*</button>
-    <button>/</button>
-    <button>=</button>
-</div>
+        
+        <div>
+            <button>9</button>
+            <button>8</button>
+            <button>7</button>
+        </div>
+        
+        <div>
+            <button>6</button>
+            <button>5</button>
+            <button>4</button>
+        </div>
+        
+        <div>
+            <button>3</button>
+            <button onclick="setarDois()">2</button>
+            <button onclick="setarUm()">1</button>
+        </div>
+        
+        <div>
+            <button onclick="setarZero()">0</button>
+        </div>
+        
+        <div>
+            <button>limpar</button>
+        </div>
+        
+        <div>
+            <button>.</button>
+            <button onclick="adicionarUm()">+</button>
+            <button>-</button>
+            <button>*</button>
+            <button>/</button>
+            <button>=</button>
+        </div>
 
 
-</div>
-
-
-
-<script type="text/javascript">
-    let numero = 10;
-
-    let tagDisplay = document.getElementById("display");
-    tagDisplay.innerText = numero;
-
-function setarZero() {
-    numero = 0;
-    tagDisplay.innerText = 0;
-}
-
-function setarUm() {
-    numero = 1;
-    tagDisplay.innerText = 1;
-}
-
-function setarDois() {
-    numero = 2;
-    tagDisplay.innerText = 2;
-}
-
-function adicionarUm() {
-    numero = numero + 1;
-    tagDisplay.innerText = numero;
-}
-</script>
+    </div>
 
 </body>
+
 </html>
